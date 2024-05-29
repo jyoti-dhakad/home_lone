@@ -6,4 +6,16 @@ Rails.application.routes.draw do
   resources :users
   post 'login', to: "authentications#login"
   delete 'logout', to: 'authentications#logout'
+
+  get 'current_user', to: 'current_users#index'
+  resources :loans
+
+  namespace :admin do
+    resources :loan_applications do
+      member do
+        put :approve
+        put :cancel
+      end
+    end
+  end
 end
