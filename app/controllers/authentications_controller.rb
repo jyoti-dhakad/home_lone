@@ -4,7 +4,7 @@ class AuthenticationsController < ApplicationController
     skip_before_action:verify_authenticity_token
     
     def login
-        debugger
+        
         @user = User.find_by_email(params[:email])
         if @user&.authenticate(params[:password])
             payload = { user_id: @user.id, timestamp: Time.now.to_i }
@@ -26,8 +26,5 @@ class AuthenticationsController < ApplicationController
         render json: { message: 'Logged out successfully' }, status: :ok
     end
 
-    # private
-    # def user_params
-    #    params.require(:user).permit(:email,:password)
-    # end
+    
 end
