@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  amount: 9.99
+  start_date: MyString
+  end_date: MyString
+  user: one
+
+two:
+  status: 1
+  amount: 9.99
+  start_date: MyString
+  end_date: MyString
+  user: two
