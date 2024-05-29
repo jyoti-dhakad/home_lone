@@ -10,24 +10,50 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
+    columns do
+      column do
+        panel "Registered Users" do
+          div do
+            "Total Users: #{User.count}"
+          end
+        end
 
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
-    # end
+        panel "New Loan Applications" do
+          div do
+            "New Loan Applications: #{LoanApplication.pending.count}"
+          end
+        end
+
+        panel "Approved Loan Applications" do
+          div do
+            "Approved Loan Applications: #{LoanApplication.approved.count}"
+          end
+        end
+
+        panel "Rejected Loan Applications" do
+          div do
+            "Rejected Loan Applications: #{LoanApplication.cancelled.count}"
+          end
+        end
+
+        # panel "Disbursed Loan Applications" do
+        #   div do
+        #     "Disbursed Loan Applications: #{LoanApplication.disbursed.count}"
+        #   end
+        # end
+
+        # panel "Unread Enquiries" do
+        #   div do
+        #     "Unread Enquiries: #{Enquiry.unread.count}"
+        #   end
+        # end
+
+        # panel "Read Enquiries" do
+        #   div do
+        #     "Read Enquiries: #{Enquiry.read.count}"
+        #   end
+        # end
+      end
+    end
   end # content
 end

@@ -1,10 +1,10 @@
-ActiveAdmin.register LoanApplication, as: "Loan Request" do
+ActiveAdmin.register LoanApplication do
   
-  menu parent: "Loan"
+  menu parent: "Loans"
 
    permit_params :status, :amount, :start_date, :end_date, :user_id
 
-   actions :all, :except => [:new, :destroy, :edit]
+  actions :all, :except => [:new, :destroy, :edit]
   #
   action_item :approve, only: :show do
     if resource.status == 'pending' # Check if status is pending
@@ -24,10 +24,10 @@ ActiveAdmin.register LoanApplication, as: "Loan Request" do
     if resource.update(status: :approved)
       
       puts "Loan Request status updated successfully"
-      redirect_to admin_loan_applications_path, notice: "Loan Request approved successfully."
+      redirect_to admin_loan_application_path, notice: "Loan Request approved successfully."
     else
       puts "Failed to update Loan Request status: #{resource.errors.full_messages.join('. ')}"
-      redirect_to admin_loan_applications_path, alert: "Failed to approve status: #{resource.errors.full_messages.join('. ')}"
+      redirect_to admin_loan_application_path, alert: "Failed to approve status: #{resource.errors.full_messages.join('. ')}"
     end
   end
 

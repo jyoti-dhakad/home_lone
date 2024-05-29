@@ -1,5 +1,5 @@
 ActiveAdmin.register_page "Disbursed Loans" do
-    menu parent: "Loan"
+    menu parent: "Loans"
   
     content title: "Disbursed Loans" do
       columns do
