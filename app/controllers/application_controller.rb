@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
     include JwtToken
-    #  before_action :authenticate_user
-     before_action :authenticate_user, unless: -> { is_a?(ActiveAdmin::BaseController) }
-
+    before_action :authenticate_user, unless: -> { is_a?(ActiveAdmin::BaseController) || (is_a?(ActiveAdmin::Devise::SessionsController))}
     
     
     private
