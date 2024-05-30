@@ -8,9 +8,7 @@ ActiveAdmin.register AboutU do
 
   index do
     selectable_column
-    
     column :content
-    
     actions
   end
  
