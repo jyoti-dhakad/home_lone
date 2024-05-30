@@ -2,7 +2,7 @@ ActiveAdmin.register LoanApplication do
   
   menu parent: "Loans"
 
-   permit_params :status, :amount, :start_date, :end_date, :user_id
+   permit_params :status, :amount, :start_date, :end_date, :user_id, :application_number
 
   actions :all, :except => [:new, :destroy, :edit]
   #
@@ -22,7 +22,7 @@ ActiveAdmin.register LoanApplication do
   member_action :approve, method: :put do
     
     if resource.update(status: :approved)
-      
+      LoanApplicationMailer.application_approved(resource.user).deliver_now
       puts "Loan Request status updated successfully"
       redirect_to admin_loan_application_path, notice: "Loan Request approved successfully."
     else
@@ -47,7 +47,7 @@ ActiveAdmin.register LoanApplication do
     scope.where("DATE(created_at) = ?", Date.yesterday)
   end
   scope "Today" do |leaves|
-    leaves.where("start_date = ?", Date.today)
+    leaves.where("DATE(created_at) = ?", Date.today)
   end
   
   

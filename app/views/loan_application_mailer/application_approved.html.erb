@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h2>Your Loan Application has been Approved</h2>
+  
+  <p>Dear <%= @user.name %>,</p>
+  
+  <p>We are pleased to inform you that your loan application has been approved.</p>
+  
+  <p>Loan Application Details:</p>
+  <ul>
+    <li>Amount: <%= @user.loan_application.amount %></li>
+    <li>Start Date: <%= @user.loan_application.start_date %></li>
+    <li>End Date: <%= @user.loan_application.end_date %></li>
+  </ul>
+  
+  <p>Thank you for choosing our services.</p>
+  
+  <p>Best regards,<br>
+  Your Lender</p>
+</body>
+</html>

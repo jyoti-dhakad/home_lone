@@ -34,19 +34,19 @@ ActiveAdmin.register_page "Dashboard" do
 
         panel "Rejected Loan Applications" do
           div do
-            "Rejected Loan Applications: #{LoanApplication.where(status: 'rejected').count}"
+            "Rejected Loan Applications: #{LoanApplication.where(status: 'cancelled').count}"
           end
         end
 
         panel "Unread Enquiries" do
           div do
-            "Unread Enquiries: #{Enquiry.where(status: 'unread').count}"
+            "Unread Enquiries: #{Enquiry.where(status: 'Unread').count}"
           end
         end
 
         panel "Read Enquiries" do
           div do
-            "Read Enquiries: #{Enquiry.where(status: 'read').count}"
+            "Read Enquiries: #{Enquiry.where(status: 'Read').count}"
           end
         end
 
