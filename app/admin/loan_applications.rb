@@ -40,6 +40,15 @@ ActiveAdmin.register LoanApplication do
   end
 
 
+  scope "All", default: true do |leaves|
+    leaves
+  end
+  scope "Yesterday", group: :date do |scope|
+    scope.where("DATE(created_at) = ?", Date.yesterday)
+  end
+  scope "Today" do |leaves|
+    leaves.where("start_date = ?", Date.today)
+  end
   
   
 end

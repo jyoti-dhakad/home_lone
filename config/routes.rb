@@ -18,4 +18,14 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  namespace :admin do
+    resources :enquiries do
+      member do
+        put :Read
+        
+      end
+    end
+  end
+  resources :enquiries
 end
