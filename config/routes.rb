@@ -28,4 +28,13 @@ Rails.application.routes.draw do
     end
   end
   resources :enquiries
+
+  namespace :admin do
+    resources :users do
+      member do
+        put :approve
+        put :cancel
+      end
+    end
+  end
 end

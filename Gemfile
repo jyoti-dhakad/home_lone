@@ -62,3 +62,4 @@ gem "activeadmin"
 gem "devise"
 
 gem 'arctic_admin'
+gem 'active_model_serializers'
