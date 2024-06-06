@@ -4,7 +4,7 @@ class AuthenticationsController < ApplicationController
     skip_before_action:verify_authenticity_token
     
     def login
-        debugger
+        
         @user = User.find_by_email(params[:email])
         if @user.status == 'approved'
 

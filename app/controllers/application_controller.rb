@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
         end
     
         unless jwt_valid?(token)
-          render json: { errors: 'Invalid token' }, status: :unauthorized
+          render json: { errors: 'Invalid token, no user is currently logged in' }, status: :unauthorized
           return
         end
     

@@ -3,14 +3,14 @@ class EnquiriesController < ApplicationController
     skip_before_action:verify_authenticity_token
    
     def create
-        debugger
+        
         @enquiry = Enquiry.new(enquiry_params)
         @enquiry.user_id = @current_user.id
         if @enquiry.save
           render json: @enquiry
             
         else
-          render json: {error: "params has required"}
+          render json: @enquiry.errors
         end
     end
 

@@ -12,13 +12,13 @@ class UsersController < ApplicationController
         if @user.save
             render json: @user, each_serializer: UserSerializer
         else
-            render json: { error: "params are required" }
+            render json: @user.errors
         end
     end
 
     private
 
     def user_params
-        params.require(:user).permit(:name, :phone_number, :email, :password, :merital_status, :present_address, :parmanent_address, :category, :picture, :income_source, :annual_income)
+        params.require(:user).permit(:name, :phone_number, :email, :password, :merital_status, :present_address, :parmanent_address, :category, :picture, :income_source, :annual_income, :date_of_birth)
     end
 end

@@ -4,7 +4,7 @@ class UserSerializer < ActiveModel::Serializer
   
 
   def picture_url
-    debugger
+    
     if object.picture.attached?
       Rails.application.routes.url_helpers.rails_blob_url(object.picture, only_path: true)
     else

@@ -1,7 +1,7 @@
 ActiveAdmin.register User do
 
    actions :all, :except => [:new, :destroy, :edit]
-   permit_params :name, :email, :password_digest, :phone_number, :picture, :merital_status, :present_address, :parmanent_address, :category, :income_source, :annual_income, :status
+   permit_params :name, :email, :password_digest, :phone_number, :picture, :merital_status, :present_address, :parmanent_address, :category, :income_source, :annual_income, :status, :date_of_birth
 
    index do
       selectable_column
@@ -23,6 +23,7 @@ ActiveAdmin.register User do
       column :income_source
       column :annual_income
       column :status
+      column :date_of_birth
       
       actions
 
@@ -49,7 +50,7 @@ ActiveAdmin.register User do
         
         redirect_to admin_user_path, notice: "user approved successfully."
       else
-      #   puts "Failed to update Loan Request status: #{resource.errors.full_messages.join('. ')}"
+      
         redirect_to admin_user_path, alert: "Failed to approve status: #{resource.errors.full_messages.join('. ')}"
       end
     end

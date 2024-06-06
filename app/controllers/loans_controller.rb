@@ -11,7 +11,7 @@ class LoansController < ApplicationController
       render json: @loan
         
     else
-      render json: {error: "params has required"}
+      render json: @loan.errors
     end
   end
 
