@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'current_user', to: 'current_users#index'
   resources :loans
+  resources :contact_us
+  resources :about_us
 
   namespace :admin do
     resources :loan_applications do

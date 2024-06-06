@@ -1,0 +1,780 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          10,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          3,
+          0,
+          0,
+          null,
+          null,
+          3,
+          0,
+          0,
+          null,
+          null,
+          null,
+          3,
+          3,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          6,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/about_us_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/authentications_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/contact_us_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/current_users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/enquiries_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/loans_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/concerns/jwt_token.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/admin_user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/about_us.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/about_u.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/admin_users.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/contact_us.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/contact_u.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/dashboard.rb": {
+        "lines": [
+          null,
+          1,
+          5,
+          null,
+          null,
+          5,
+          2,
+          null,
+          2,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/enquiries.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/enquiry.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/loan_applications.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          1,
+          0,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/loan_application.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/loans.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/admin/users.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          4,
+          0,
+          null,
+          4,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/about_us_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/contact_us_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/current_users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/models/blacklisted_token.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          2,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/enquiries_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/loans_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/mailers/loan_application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/controllers/authentications_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/r1/jyoti-ror/home_loan_management_system/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1717679657
+  }
+}

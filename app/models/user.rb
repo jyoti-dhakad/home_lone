@@ -10,5 +10,5 @@ class User < ApplicationRecord
     validates :name, :email, :phone_number, presence: true
     validates :date_of_birth, :present_address, :parmanent_address, presence: true
     validates :merital_status, :category, :annual_income, presence: true
-    validates :picture, presence: true
+        
 end
