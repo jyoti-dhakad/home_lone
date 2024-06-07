@@ -1,22 +1,22 @@
 class EnquiriesController < ApplicationController
 
-    skip_before_action:verify_authenticity_token
-   
-    def create
+  skip_before_action:verify_authenticity_token
+  
+  def create
+      
+    @enquiry = Enquiry.new(enquiry_params)
+    @enquiry.user_id = @current_user.id
+    if @enquiry.save
+      render json: @enquiry
         
-        @enquiry = Enquiry.new(enquiry_params)
-        @enquiry.user_id = @current_user.id
-        if @enquiry.save
-          render json: @enquiry
-            
-        else
-          render json: @enquiry.errors
-        end
+    else
+      render json: @enquiry.errors
     end
+  end
 
-    private
+  private
 
-    def enquiry_params
-        params.require(:enquiry).permit(:loan_application_id, :message)
-    end
+  def enquiry_params
+      params.require(:enquiry).permit(:loan_application_id, :message)
+  end
 end

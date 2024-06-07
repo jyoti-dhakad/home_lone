@@ -13,8 +13,9 @@
   <p>Loan Application Details:</p>
   <ul>
     <li>Amount: <%= @user.loan_application.amount %></li>
-    <li>Start Date: <%= @user.loan_application.start_date %></li>
-    <li>End Date: <%= @user.loan_application.end_date %></li>
+    <li>EMI: <%= @user.loan_application.emi %></li>
+    <li>INTEREST: <%= @user.loan_application.interest %></li>
+    <li>Total Loan: <%= @user.loan_application.total_loan %></li>
   </ul>
   
   <p>Thank you for choosing our services.</p>

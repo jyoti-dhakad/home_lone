@@ -4,7 +4,5 @@ class AboutUsController < ApplicationController
     def index
         @about = AboutU.all
         render json: @about
-
-    
     end
 end

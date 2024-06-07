@@ -20,6 +20,25 @@ ActiveAdmin.register_page "Dashboard" do
           end
         end
 
+        panel "New users" do
+          div do
+            "New users: #{User.where(status: 'pending').count}"
+          end
+        end
+
+        panel "Approved Users" do
+          div do
+            "Total Users: #{User.where(status: 'approved').count}"
+          end
+        end
+
+        panel "rejected Users" do
+          div do
+            "Total Users: #{User.where(status: 'cancelled').count}"
+          end
+        end
+
+
         panel "New Loan Applications" do
           div do
             "New Loan Applications: #{LoanApplication.where(status: 'pending').count}"

@@ -2,7 +2,7 @@ ActiveAdmin.register LoanApplication do
   
   menu parent: "Loans"
 
-   permit_params :status, :amount, :start_date, :end_date, :user_id, :application_number
+   permit_params :status, :amount, :emi, :user_id, :application_number
 
   actions :all, :except => [:new, :destroy, :edit]
   #

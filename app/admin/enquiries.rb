@@ -1,8 +1,6 @@
 ActiveAdmin.register Enquiry do
 
   permit_params :message, :user_id, :loan_application_id
-  #
-  
   
   action_item :Read, only: :show do
     debugger
@@ -11,9 +9,6 @@ ActiveAdmin.register Enquiry do
     end
   end
 
-  
-
-  
   member_action :Read, method: :put do
     
     if resource.update(status: :Read)
@@ -27,6 +22,4 @@ ActiveAdmin.register Enquiry do
     end
   end
 
-  
-  
 end

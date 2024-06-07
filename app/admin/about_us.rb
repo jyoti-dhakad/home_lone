@@ -1,7 +1,6 @@
 ActiveAdmin.register AboutU do
 
   menu parent: "Pages"
-
   permit_params :content
 
   actions :all, :except => [:new, :destroy, :edit]
