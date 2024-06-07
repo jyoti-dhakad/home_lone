@@ -43,14 +43,10 @@ ActiveAdmin.register User do
 
   
   member_action :approve, method: :put do
-    
     if resource.update(status: :approved)
-        
-        LoanApplicationMailer.profile_approved(resource).deliver_now
-      
+      LoanApplicationMailer.profile_approved(resource).deliver_now
       redirect_to admin_user_path, notice: "user approved successfully."
     else
-    
       redirect_to admin_user_path, alert: "Failed to approve status: #{resource.errors.full_messages.join('. ')}"
     end
   end
@@ -63,7 +59,4 @@ ActiveAdmin.register User do
     end
   end
 
-   
- 
-  
 end

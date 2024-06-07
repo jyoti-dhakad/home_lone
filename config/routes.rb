@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :users
   post 'login', to: "authentications#login"
   delete 'logout', to: 'authentications#logout'
-
+  put 'change_password', to: "authentications#change_password"
   get 'current_user', to: 'current_users#index'
   resources :loans
   resources :contact_us
