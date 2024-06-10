@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   put 'change_password', to: "authentications#change_password"
   get 'current_user', to: 'current_users#index'
   resources :loans
+  get 'approve_loans', to: 'loans#approve_loans'
   resources :contact_us
   resources :about_us
 

@@ -15,6 +15,26 @@ class LoansController < ApplicationController
     end
   end
 
+  def index
+   
+    if current_user
+      @loans = current_user.loan_application.all
+      render json: @loans
+    
+    end
+  end
+
+  def approve_loans
+    debugger
+    @loans = current_user.loan_application.where(status: "approved")
+    
+    if @loans.any?
+      render json: @loans
+    else
+      render json: { message: "There are no approved loan applications!! Thank you!" }
+    end
+  end
+
   private
 
   def loan_params
