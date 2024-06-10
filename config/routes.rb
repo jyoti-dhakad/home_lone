@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'current_user', to: 'current_users#index'
   resources :loans
   get 'approve_loans', to: 'loans#approve_loans'
+  get 'read_enquiry', to: 'enquiries#read_enquiry'
   resources :contact_us
   resources :about_us
 

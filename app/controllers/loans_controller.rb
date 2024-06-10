@@ -25,7 +25,7 @@ class LoansController < ApplicationController
   end
 
   def approve_loans
-    debugger
+  
     @loans = current_user.loan_application.where(status: "approved")
     
     if @loans.any?

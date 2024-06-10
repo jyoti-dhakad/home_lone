@@ -3,12 +3,9 @@ class EnquiriesController < ApplicationController
   skip_before_action:verify_authenticity_token
   
   def create
-    debugger
-   
-    
-      @enquiry = Enquiry.new(enquiry_params)
-      @loan = @enquiry.loan_application
-      @enquiry.user_id = @current_user.id
+    @enquiry = Enquiry.new(enquiry_params)
+    @loan = @enquiry.loan_application
+    @enquiry.user_id = @current_user.id
     if @loan.status == "approved" 
       if @enquiry.save
         render json: @enquiry
@@ -18,6 +15,16 @@ class EnquiriesController < ApplicationController
       end
     else
       render json: {error:"after loan approval you can create enquiries.."}
+    end
+  end
+
+  def read_enquiry
+    @enquiry = current_user.enquiries.where(status: 1)
+    
+    if @enquiry.any?
+      render json: @enquiry
+    else
+      render json: { message: "There are no read enquiries!! Thank you!" }
     end
   end
 
