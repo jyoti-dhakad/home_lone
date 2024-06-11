@@ -19,7 +19,7 @@ class EnquiriesController < ApplicationController
   end
 
   def read_enquiry
-    @enquiry = current_user.enquiries.where(status: 1)
+    @enquiry = current_user.enquiries.where(status: "read")
     
     if @enquiry.any?
       render json: @enquiry

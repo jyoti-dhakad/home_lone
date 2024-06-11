@@ -23,14 +23,7 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :admin do
-    resources :enquiries do
-      member do
-        put :Read
-        
-      end
-    end
-  end
+  
   resources :enquiries
 
   namespace :admin do
@@ -39,6 +32,12 @@ Rails.application.routes.draw do
         put :approve
         put :cancel
       end
+    end
+  end
+
+  resources :notifications, only: [:index, :show] do
+    member do
+      patch :mark_as_read
     end
   end
 end

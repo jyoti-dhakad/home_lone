@@ -4,6 +4,7 @@ class User < ApplicationRecord
     
     has_many :loan_application
     has_many :enquiries, through: :loan_application
+    has_many :notifications
 
     enum status: { pending: 0, cancelled: 1, approved: 2 }
 

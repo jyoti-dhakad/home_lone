@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Enquiries", type: :request do
   let(:user) { FactoryBot.create(:user) }
   
-  let(:loan_application) { FactoryBot.create(:loan_application) }
+  let(:loan_application) { FactoryBot.create(:loan_application, status: "approved") }
   let(:enquiry) { FactoryBot.attributes_for(:enquiry) }
   
   
